@@ -1,9 +1,11 @@
-let a=5,b=2,c=9;
+let a=0;
 
-if( a>= b && a >= c) {
-    console.log(a);
-} else if( b >= a && b>= c ) {
-    console.log(b);
-} else if( c >= a && c>= b ) {
-    console.log(c);
+if(a >= 0){
+    if(a==0) {
+    console.log('Zero')
+    } else{
+        console.log('Positve')
+    }
+} else {
+    console.log('negative');
 }
