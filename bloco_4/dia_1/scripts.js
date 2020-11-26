@@ -1,11 +1,8 @@
-let a=0;
+let angulo1= 30, angulo2=50, angulo3=90;
+let somaAngulos= angulo1+angulo2+angulo3;
 
-if(a >= 0){
-    if(a==0) {
-    console.log('Zero')
-    } else{
-        console.log('Positve')
-    }
+if(somaAngulos <=180){
+    console.log('true');
 } else {
-    console.log('negative');
+    console.log('false');
 }
