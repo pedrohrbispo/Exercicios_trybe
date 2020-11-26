@@ -1,8 +1,29 @@
-let angulo1= 30, angulo2=50, angulo3=90;
-let somaAngulos= angulo1+angulo2+angulo3;
+let pecaXadrez= 'BISHOP';
+pecaXadrez= pecaXadrez.toLowerCase();
 
-if(somaAngulos <=180){
-    console.log('true');
-} else {
-    console.log('false');
+switch (pecaXadrez){
+    case 'bishop' :
+        console.log('Diagonals');
+        break;
+    
+    case 'pawns'
+        console.log('1 to front or 1 diagonal when him attack');
+        break;
+
+    case 'queen'
+        console.log('all directions');
+        break;
+
+    case 'king'
+        console.log('1 for all directions');
+        break;
+
+    case 'rook'
+        console.log('Vertical and horizontal');
+        break;
+    
+    case 'knight'
+        console.log('In a L format (2 moviments, then 1)');
+        break;
+    
 }
