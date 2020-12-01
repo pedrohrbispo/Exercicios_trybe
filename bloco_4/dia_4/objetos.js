@@ -1,21 +1,17 @@
-function ispalidrom( word) {
-    let trueCondition=0;
-    let size= word.length -1;
+function indexOfTheHighiest( numbers) {
+    let maior= numbers[0];
+    for( let index = 0; index < numbers.length; index +=1){
+        if(numbers[index] > maior){
+            maior = numbers[index];
+        }
 
-    for(let index = 0, index2 = size; index < word.length; index+=1 ){
-
-            if(word[index]== word[index2] ){
-                trueCondition+=1;
-                index2-=1;
-
-        }    
     }
-
-    if(trueCondition == word.length){
-        return true;
-            } else {
-        return false;
-       }
+    for( let index = 0; index < numbers.length; index +=1) {
+        if(maior == numbers[index]){
+            return index;
+        }
+    }  
 }
+let array = [2, 3, 6, 7, 10, 1];
 
-   console.log(ispalidrom('matam'));
+console.log(indexOfTheHighiest(array));
