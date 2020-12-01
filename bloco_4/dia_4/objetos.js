@@ -8,3 +8,7 @@ let info = {
 //     console.log(info.)
 //   }
 console.log('Bem Vinda, ' + info.personagem);
+
+info.recorrente = 'Sim';
+
+console.log (info);
