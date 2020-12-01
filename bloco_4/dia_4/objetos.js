@@ -1,24 +1,21 @@
-let info = {
-    personagem: "Margarida",
-    origem: "Pato Donald",
-    nota: "Namorada do personagem principal nos quadrinhos do Pato Donald",
-  };
+function ispalidrom( word) {
+    let trueCondition=0;
+    let size= word.length -1;
 
-  console.log('Bem Vinda, ' + info.personagem);
+    for(let index = 0, index2 = size; index < word.length; index+=1 ){
 
-info.recorrente = 'Sim';
+            if(word[index]== word[index2] ){
+                trueCondition+=1;
+                index2-=1;
 
-console.log (info);
+        }    
+    }
 
-  for( let key in info){ 
-    console.log(info[key]);
-  }
+    if(trueCondition == word.length){
+        return true;
+            } else {
+        return false;
+       }
+}
 
-  let info2 = {
-      personagem : info.personagem + ' e Tio patinhas',
-      origem : info.origem + 'Christmas on Bear Mountain, Dells Four Color Comics #178',
-      nota : info.nota + 'O último MacPatinhas', 
-      recorrente : 'Ambos recorrentes',
-  }
-
-  console.log(info2);
+   console.log(ispalidrom('matam'));
