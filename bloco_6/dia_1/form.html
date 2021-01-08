@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bulma.min.css">
+</head>
+<body>
+  <header class="section ">
+    <h1 class="title has-text-centered">Crie seu Currículo</h1>
+    <p class="subtitle has-text-centered"><em> Preencha o Formulário para montar o seu!!</em></p>
+  </header>
+ 
+    <form action="" method="GET">
+      <div class="control">
+            <div class="field"> 
+              <label for="full-name" class="label">Nome Completo</label>
+              <input class="input is-small" type="text" name="full-name" id="full-name" maxlength="40" required>
+            </div>
+
+            <div class="field"> 
+              <label class="label" for="email">Email</label>
+              <input class="input is-small" type="text" name="email" id="email" maxlength="50" required>
+            </div>
+
+            <div class="field"> 
+              <label class="label" for="cpf">CPF</label>
+              <input class="input is-small" type="text" name="cpf" id="cpf" maxlength="11" required>
+            </div>
+
+            <div class="field"> 
+              <label class="label" for="address">Endereço</label>
+              <input class="input is-small" type="text" name="address" id="address" maxlength="200" required>
+            </div>
+            <div class="field"> 
+              <label class="label" for="city">Cidade</label>
+              <input class="input is-small" type="text" name="city" id="city" maxlength="200" required>
+            </div>
+
+            <div class="field"> 
+              <label class="label" for="states-of-brasil">Estado</label>
+               <div class="select">
+                <select name="states-of-brasil" id="states-of-brasil" required></select>
+              </div>
+            </div>
+
+            <div class="field"> 
+              <label class="radio" for="house">Casa
+                <input type="radio" name="place-of-living" id="house" required>
+            </label>
+              <label class="radio" for="apartment">Apartamento            
+                <input type="radio" name="place-of-living" id="apartment" required>
+            </label>
+            </div>
+
+            <div class="field">
+              <label class="label" for="curriculum-summary"> Resumo do Currículo </label>
+              <textarea name="curriculum-summary" id="curriculum-summary" maxlength="1000" rows="10" cols="50" class="textarea" placeholder="Digite Aqui" required></textarea>
+              </div>
+
+              <div class="field"> 
+                <label class="label" for="role">Cargo</label>
+                <input class="input is-small" type="text" name="role" id="role" maxlength="40" required>
+              </div>
+              <div class="field"> 
+                <label class="label" for="role-description">Descrição Do Cargo</label>
+                <input class="input is-small" type="text" name="role-description" id="role-description" maxlength="200" required>
+              </div>
+
+              <div class="field">
+                <label class="label" for="contract-date">Data da contratação</label>
+                <input class="input is-small" type="date" name="contract-date" id="contract-date" required>
+              </div>
+              <div class="field">
+                <button class="button is-success" id="submit-button" type="submit">Enviar</button>
+                <button class="button is-warning" type="reset" id="reset-button">Limpar</button>
+            </div>
+            </div>
+    </form>
+  <script src="script.js"></script>
+</body>
+</html>
