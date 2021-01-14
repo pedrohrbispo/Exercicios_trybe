@@ -44,6 +44,9 @@ const order = {
   
   const orderModifier = (order) => {
     // Adicione abaixo as informações necessárias.
+    order.name = ' Luiz Silva';
+    order.payment = 60;
+    return console.log(`Ola, ${order.name}, o total do seu pedido é ${order.payment}`);
   
   }
   
