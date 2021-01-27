@@ -1,3 +1,4 @@
+//ex 4
 const messageDelay = () => Math.floor(Math.random() * 5000);
 
 const getMarsTemperature = () => {
@@ -7,8 +8,7 @@ const getMarsTemperature = () => {
 
 // crie a função sendMarsTemperature abaixo
 const sendMarsTemperature = () => {
-    let timeout = Math.floor(Math.random() * (5000 - 1000 + 1) + 1000);
-    setTimeout(() => console.log(`Mars temperature is: ${getMarsTemperature()} degree Celsius`), timeout);
+    setTimeout(() => console.log(`Mars temperature is: ${getMarsTemperature()} degree Celsius`), messageDelay);
 }
 
 
